@@ -1,0 +1,84 @@
+
+.current-weather-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  height: 50px;
+}
+
+.five-days-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  margin-left: 2px;
+  margin-right: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+img{
+  width: 125px;
+  height: auto;
+}
+
+  .card-header-left{
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .card-header-right{
+    width: 100%;
+
+    button{
+      float: right;
+    }
+  }
+  
+.city-name{
+  margin: 10px 10px;
+  font-size:40px
+}
+
+.city-tempture{
+  margin: 22px 18px;
+  font-size: 20px;
+}
+.forecast{
+  padding: 11px;
+}
+.heartColor{
+  color: red;
+}
+
+.forecastDay{
+  font-size: 30px;
+  font-weight: bold;
+  height: 38px;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+
+

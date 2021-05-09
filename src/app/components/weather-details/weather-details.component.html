@@ -1,0 +1,37 @@
+<search-location (newItemEvent)="onSelectItem($event)"></search-location>
+
+<mat-card class="mat-elevation-z5">
+  <mat-card-content>
+
+    <div class="card-header-left">
+      <div class="city-name"> {{selectedItem?.LocalizedName}} </div>
+      <div class="city-tempture">{{selectedItem?.Temperature.Metric.Value}} C</div>
+    </div>
+
+    <div class="card-header-right">
+      <button mat-button (click)="toggleFavorites(selectedItem)">
+        <mat-icon [ngClass]="{'heartColor':!inFavorite(selectedItem)} ">
+          favorite
+        </mat-icon>
+        <span *ngIf="!inFavorite(selectedItem); else elseBlock">
+          Add to favorites
+        </span>
+        <ng-template #elseBlock>Remove from favorites</ng-template>
+      </button>
+    </div>
+    <div class="current-weather-text">{{selectedItem?.WeatherText}}</div>
+    <div class="five-days-container">
+      <div class="item" *ngFor="let forecast of selectedItem?.DailyForecasts">
+        <div class="icon">
+          <img src="{{forecast?.Day?.Icon | currentImgIcon}}" />
+        </div>
+        <div class="forecastDay">
+          {{forecast.Date |  date: 'EEE'}}
+        </div>
+
+        <div class="temperature"> {{forecast.Temperature.Minimum.Value}}{{forecast.Temperature.Minimum.Unit}} -
+          {{forecast.Temperature.Maximum.Value}}{{forecast.Temperature.Maximum.Unit}}</div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

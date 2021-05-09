@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Weather App</h1>
+    <span class="menu-spacer"></span>
+    <div class="links">
+      <span>
+        <!-- <mat-slide-toggle [ngModel]="(switch$ | async)?.themeState" (change)="onDarkThemeClick()" class="toggle-font-size">
+          {{ (switch$ | async)?.themeState ? 'Dark' : 'Light' }}
+          theme</mat-slide-toggle> -->
+      </span>
+      <a mat-button routerLinkActive="active" [routerLink]="'/weather-details'"> Weather Details </a>
+      <a mat-button routerLinkActive="active" [routerLink]="'/favorites'">Favorites</a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

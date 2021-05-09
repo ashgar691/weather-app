@@ -1,0 +1,7 @@
+<h1>My Favorites</h1>
+<div class="favorites-container">
+    <div class="item" *ngFor="let fav of favoritesArray" (click)="locationClicked(fav)">
+        <div class="cityName">{{fav?.LocalizedName}}</div>
+        <div>{{fav?.Country?.LocalizedName}}</div>
+    </div>
+</div>

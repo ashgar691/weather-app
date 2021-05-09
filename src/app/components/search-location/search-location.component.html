@@ -1,0 +1,13 @@
+<h1>Search a Location</h1>
+<form class="search-form-container">
+  <mat-form-field MatFormFieldControl>
+    <mat-label>Search Location</mat-label>
+    <input type="text" aria-label="Search a Location" matInput
+      [formControl]="selectedLocation" [matAutocomplete]="auto">
+    <mat-autocomplete [displayWith]="onDisplayLocation" #auto="matAutocomplete">
+      <mat-option (click)="onLocationSelected(option)" *ngFor="let option of filteredOptions$ | async" [value]="option">
+        {{option.LocalizedName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

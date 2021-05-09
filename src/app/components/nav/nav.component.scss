@@ -1,0 +1,32 @@
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    
+
+
+    @media screen and (min-width: 600px) {
+       a ,.toggle-font-size{
+          font-size: 15px;
+        }
+      }
+      
+      /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+      @media screen and (max-width: 400px) {
+        a ,.toggle-font-size,h1 {
+          font-size: 11px;
+        }
+      }
+
+}
+
+     /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+     @media screen and (max-width: 400px) {
+            h1 {
+          font-size: 11px;
+        }
+      }
+
+
