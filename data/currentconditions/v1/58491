@@ -1,0 +1,30 @@
+[
+  {
+    "LocalObservationDateTime": "2021-05-07T08:16:00+08:00",
+    "EpochTime": 1620346560,
+    "WeatherText": "Heavy rain",
+    "WeatherIcon": 18,
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "LocalSource": {
+      "Id": 7,
+      "Name": "Huafeng",
+      "WeatherCode": "09"
+    },
+    "IsDayTime": true,
+    "Temperature": {
+      "Metric": {
+        "Value": 18.1,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 65,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "http://m.accuweather.com/en/cn/tongren/58491/current-weather/58491?lang=en-us",
+    "Link": "http://www.accuweather.com/en/cn/tongren/58491/current-weather/58491?lang=en-us"
+  }
+]

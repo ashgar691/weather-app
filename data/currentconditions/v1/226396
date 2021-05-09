@@ -1,0 +1,25 @@
+[
+  {
+    "LocalObservationDateTime": "2021-05-07T09:10:00+09:00",
+    "EpochTime": 1620346200,
+    "WeatherText": "Light rain",
+    "WeatherIcon": 12,
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "IsDayTime": true,
+    "Temperature": {
+      "Metric": {
+        "Value": 17.8,
+        "Unit": "C",
+        "UnitType": 17
+      },
+      "Imperial": {
+        "Value": 64,
+        "Unit": "F",
+        "UnitType": 18
+      }
+    },
+    "MobileLink": "http://m.accuweather.com/en/jp/tokyo/226396/current-weather/226396?lang=en-us",
+    "Link": "http://www.accuweather.com/en/jp/tokyo/226396/current-weather/226396?lang=en-us"
+  }
+]
